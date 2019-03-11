@@ -17,12 +17,15 @@
 যেমন show নাম দিয়ে শুরু ফাংশন কোন কিছু প্রদর্শন করবে।
 
 ফাংশন শুরু হয়---
+
 get ভ্যালু রিট্যান করে।
  
 calc কোন কিছু গণনা করে।
 
 create কোন কিছু তৈরি করে 
+
 check - কোন কিছু চেক করে এবং বুলিয়ান ভ্যালু রিট্যান করে ইত্যাদি
+
 
     showMessage(..) // মেসেজ বা বার্তা প্রদর্শন করে।
     getAge(..) // এজ (age) রিট্যান করে।  গেট হয় কোনউপায়ে।
@@ -63,15 +66,15 @@ checkPermission - এটি খারাপ যদি এটি access granted/d
  
  প্রথম উপায়টি লেভেল ব্যবহার করে:     
  
- function showPrimes(n) {
-	 nextPrime: for (let i = 2; i < n; i++) {
-		 for (let j = 2; j<i; j++){
-			 if (i%j == 0) continue nextPrime;
+	 function showPrimes(n) {
+		 nextPrime: for (let i = 2; i < n; i++) {
+			 for (let j = 2; j<i; j++){
+				 if (i%j == 0) continue nextPrime;
+			 }
+			 
+			 alert(i); //a prime
 		 }
-		 
-		 alert(i); //a prime
 	 }
- }
  
 
  
