@@ -75,21 +75,21 @@ checkPermission - এটি খারাপ যদি এটি access granted/d
  
  দ্বিতীয়টি উপায়টি অতিরিক্ত ফাংশন isPrime(n) ব্যবহার করে প্রাইমালিটি টেস্ট করা হয়:
  
- function showPrimes(n) {
-	 
-	 for (let i = 2; i < n; i++) {
-		 if (!isPrime(i)) continue;
+	 function showPrimes(n) {
 		 
-		 alert(i); // a prime
+		 for (let i = 2; i < n; i++) {
+			 if (!isPrime(i)) continue;
+			 
+			 alert(i); // a prime
+		 }
 	 }
- }
 
- function isPrime(n) {
-	 for (let i = 2; i < n; i++) {
-		 if (n % i == 0) return false;
+	 function isPrime(n) {
+		 for (let i = 2; i < n; i++) {
+			 if (n % i == 0) return false;
+		 }
+		 return true;
 	 }
-	 return true;
- }
 
 দ্বিতীয় উপায়টি বুঝতে সহজ, তাই নয় কি? কোড অংশটুকু বাদ দিয়ে, আমরা isPrime নামে একটি কাজের নাম দেখতে পাই। এ ধরনের কোডকে আত্ম বর্ণনামুলুক কোড বলে অভিহিত করা হয়।
 যদিও আমরা পুনরায় ব্যবহার নাও করি, তবুও আমরা ফাংশন তৈরি করি। এটি কোডকে একটি স্ট্যাকচার রুপ দেয় এবং পঠনযোগ্য করে তোলে।
